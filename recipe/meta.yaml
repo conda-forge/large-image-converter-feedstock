@@ -21,9 +21,9 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - large-image =={{ version }}
-    - large-image-source-gdal =={{ version }}
-    - large-image-source-tiff =={{ version }}
+    - large-image
+    - large-image-source-gdal
+    - large-image-source-tiff
     - pyvips
     - tifftools
     - glymur
