@@ -1,5 +1,5 @@
 {% set name = "large-image-converter" %}
-{% set version = "1.8.9" %}
+{% set version = "1.8.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a132f2c722f54dbb772e3e7a020bbe38a6876642071544e3a677807f42b8f4a
+  sha256: 2e77396fbbbb8adda2d8271a8729ef013c6fca6c873255d06463af8a579003bc
 
 build:
   number: 0
@@ -21,9 +21,9 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - large-image =={{ version }}
-    - large-image-source-gdal =={{ version }}
-    - large-image-source-tiff =={{ version }}
+    - large-image
+    - large-image-source-gdal
+    - large-image-source-tiff
     - pyvips
     - tifftools
     - glymur
