@@ -10,23 +10,22 @@ source:
   sha256: 0aea8cc12fe90f200692bd4bcbdfa8dba11406e6c652c4c6f5dc99e8ecb55217
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.8
     - large-image
     - large-image-source-gdal
     - large-image-source-tiff
     - pyvips
     - tifftools
-    - glymur
     - scikit-image
 
 test:
