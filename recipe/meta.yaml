@@ -1,5 +1,5 @@
 {% set name = "large-image-converter" %}
-{% set version = "1.30.3" %}
+{% set version = "1.30.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d12fb2b0e042df297e344a881a53c8143f88ac15f0cb30d81b370711cbfc63db
+  sha256: a6bb418bc77c1be0098c8f57ebc1bdcb4a1f9453f6f0a788c9c34eb66ebb1b07
 
 build:
   number: 0
